@@ -4,7 +4,11 @@
   "private": true,
   "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "prestart": "yarn build",
+    "start": "concurrently -k -n ts,server -c \"bgBlue.bold,bgMagenta.bold\" \"yarn watch\" \"yarn server\"",
+    "prebuild": "rimraf \"./build/**/*\"",
+    "build": "tsc",
+    "server": "node ./build/server/src/server.js",
     "test": "jest --watch"
   },
   "dependencies": {
