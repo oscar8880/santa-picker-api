@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "prestart": "yarn build",
-    "start": "concurrently -k -n ts,server -c \"bgBlue.bold,bgMagenta.bold\" \"yarn watch\" \"yarn server\"",
+    "start": "concurrently -k -n ts,server -c \"bgBlue.bold,bgMagenta.bold\" \"yarn server\"",
     "prebuild": "rimraf \"./build/**/*\"",
     "build": "tsc",
     "server": "node ./build/server/src/server.js",
