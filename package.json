@@ -4,14 +4,7 @@
   "private": true,
   "main": "src/server.ts",
   "scripts": {
-    "prestart": "yarn build",
-    "start": "concurrently -k -n ts,server -c \"bgBlue.bold,bgMagenta.bold\" \"yarn watch\" \"yarn server\"",
-    "server": "nodemon ./build/server.js",
-    "server:nowatch": "node ./build/server/src/server.js",
-    "watch": "tsc -w",
-    "prebuild": "rimraf \"./build/**/*\"",
-    "build": "tsc",
-    "postinstall": "yarn build",
+    "start": "ts-node src/server.ts",
     "test": "jest --watch"
   },
   "dependencies": {
