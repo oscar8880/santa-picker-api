@@ -1,5 +1,5 @@
 {
-  "name": "@alpha-wealth/mock-api",
+  "name": "santa-picker-api",
   "version": "0.0.0",
   "private": true,
   "main": "src/server.ts",
@@ -10,8 +10,9 @@
     "server:nowatch": "node ./build/server/src/server.js",
     "watch": "tsc -w",
     "prebuild": "rimraf \"./build/**/*\"",
-    "build": "tsc",
-    "test": "jest --watch"
+    "build": "yarn tsc",
+    "test": "jest --watch",
+    "tsc": "tsc"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.2.5",
