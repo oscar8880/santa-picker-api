@@ -4,11 +4,7 @@
   "private": true,
   "main": "src/server.ts",
   "scripts": {
-    "prestart": "yarn build",
-    "start": "concurrently -k -n ts,server -c \"bgBlue.bold,bgMagenta.bold\" \"yarn server\"",
-    "prebuild": "rimraf \"./build/**/*\"",
-    "build": "tsc",
-    "server": "node ./build/server/src/server.js",
+    "start": "ts-node src/server.ts",
     "test": "jest --watch"
   },
   "dependencies": {
@@ -25,9 +21,7 @@
     "nodemon": "^2.0.2",
     "rimraf": "^3.0.2",
     "ts-node": "^8.10.1",
-    "typescript": "^3.8.3",
-    "@types/jest": "^26.0.14",
-    "concurrently": "^5.1.0"
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -41,6 +35,8 @@
     "@types/morgan": "^1.9.0",
     "@types/node": "^13.9.1",
     "babel-jest": "^26.3.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "@types/jest": "^26.0.14",
+    "concurrently": "^5.1.0"
   }
 }
