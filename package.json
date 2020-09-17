@@ -10,9 +10,9 @@
     "server:nowatch": "node ./build/server/src/server.js",
     "watch": "tsc -w",
     "prebuild": "rimraf \"./build/**/*\"",
-    "build": "yarn tsc",
-    "test": "jest --watch",
-    "tsc": "tsc"
+    "build": "tsc",
+    "postinstall": "yarn build",
+    "test": "jest --watch"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.2.5",
