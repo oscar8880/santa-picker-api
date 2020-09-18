@@ -24,7 +24,7 @@ Try it out at https://santa-picker.netlify.app.
 - [React](https://reactjs.org/) - JS Framework
 - [Yarn](https://yarnpkg.com/) - JS Package Manager
 - [Typescript](https://www.typescriptlang.org/) - Language specification
-  [Express application generator](https://expressjs.com/en/starter/generator.html) - Server bootstrap
+- [Express application generator](https://expressjs.com/en/starter/generator.html) - Server bootstrap
 - [Jest](https://jestjs.io/) - Testing framework
 
 ## Acknowledgements
