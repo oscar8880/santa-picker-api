@@ -1,23 +1,40 @@
-# Santa Picker
+<p align="center">
+  <a href="https://github.com/oscar8880/santa-picker-app">
+  <img src="./images/logo.png" alt="Logo" height="120">
+  </a>
+</p>
 
-A small API server application for Santa Picker built using [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/)
+## Table of Contents
 
-This project was bootstrapped with [Express application generator](https://expressjs.com/en/starter/generator.html).
+- [About](#about)
+- [Built With](#built-with)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-## Prerequisites
+## About
 
-This project using [Yarn](https://yarnpkg.com/lang/en/) to manage npm packages. To install simply follow the instructions [here](https://yarnpkg.com/en/docs/install).
+![Screenshot](images/screenshot.png?raw=true)
 
-## Available Scripts
+Santa Picker API is a Node.js + Typescript backend service for Santa Picker - a web app for drawing secret santa names and emailing the results anonymously.
 
-In the project directory, you can run:
+Try it out at https://santa-picker.netlify.app.
 
-### `yarn start`
+## Built With
 
-Runs the server in the development mode at [http://localhost:5000](http://localhost:5000).
+- [React](https://reactjs.org/) - JS Framework
+- [Yarn](https://yarnpkg.com/) - JS Package Manager
+- [Typescript](https://www.typescriptlang.org/) - Language specification
+  [Express application generator](https://expressjs.com/en/starter/generator.html) - Server bootstrap
+- [Jest](https://jestjs.io/) - Testing framework
 
-The server will recompile and restart itself if you make edits.
+## Acknowledgements
 
-### `yarn build`
+- [ESLint](https://eslint.org/) - Linter
+- [Prettier](https://prettier.io/) - Code formatter
+- [Stylelint](https://stylelint.io/) - CSS formatter
+- [SendGrid](https://sendgrid.com/) - Email delivery
+- [Auth0](https://auth0.com/) - Authentication
 
-Builds the server for standalone use with the artifcats saved to the `build` folder. The api can then be run like so `node ./build/server/src/server.js`.
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
