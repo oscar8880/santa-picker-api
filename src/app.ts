@@ -8,13 +8,12 @@ const jwksRsa = require("jwks-rsa");
 
 import index from "./routes/index";
 import email from "./routes/email";
+import { apiConsumerOrigin } from "./constants/origin";
 
 const origin =
   process.env.NODE_ENV === "development"
     ? process.env.WEB_ORIGIN
-    : "https://santa-picker.netlify.app";
-
-console.log(origin);
+    : apiConsumerOrigin;
 
 const app = express();
 const checkJwt = jwt({
