@@ -9,9 +9,11 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 router.post("/", async (req, res) => {
   const { contacts, organiserName, spendingLimit } = req.body;
   const pairedContacts = assignRandomContacts(contacts);
+
+  console.log(`Email request submitted by ${req.body.organiserName}`);
+  console.log(`Sending ${req.body.contacts.length} emails`);
+
   const emails = pairedContacts.map((contactPair) => {
-    console.log(`Email request submitted by ${req.body.organiserName}`);
-    console.log(`Sending ${req.body.contacts.length} emails`);
     return {
       to: contactPair.contact.email,
       from: "secretsantacourierelf@gmail.com",
