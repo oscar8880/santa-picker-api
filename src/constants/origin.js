@@ -1,1 +1,3 @@
-export const apiConsumerOrigin = "https://santa-picker.netlify.app";
+const apiConsumerOrigin = "https://santa-picker.netlify.app";
+
+exports.apiConsumerOrigin = apiConsumerOrigin;
