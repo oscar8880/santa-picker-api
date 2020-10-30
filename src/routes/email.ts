@@ -30,6 +30,7 @@ router.post("/", async (req, res) => {
       },
     };
   });
+
   sgMail
     .send(emails)
     .then((response) => {
@@ -37,7 +38,7 @@ router.post("/", async (req, res) => {
         `Successfully sent ${response.length}/${req.body.contacts.length} emails`
       );
       const status = 200;
-      res.status(status).json({ status });
+      res.status(status).json(pairedContacts);
     })
     .catch((error) => {
       console.log(`Failed to send one or more emails`);
